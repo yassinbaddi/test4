@@ -1,12 +1,10 @@
 import "@radix-ui/themes/styles.css";
-import "./my-styles.css";
+import { Theme, Button } from "@radix-ui/themes";
 
-function MyApp() {
-	return (
-		<Theme>
-			<Box asChild m="5" >
-				<p className="my-paragraph">My custom paragraph</p>
-			</Box>
-		</Theme>
-	);
-}
+export default () => (
+	<Theme>
+		<Button>Hey 👋</Button>
+	</Theme>
+);
+
+
